@@ -12,8 +12,8 @@ from qgis.core import QgsVectorLayer, QgsProject, QgsGraduatedSymbolRenderer, Qg
 from PyQt5.QtGui import QColor
 
 # GeoPandas로 서울 행정구역 shp 파일 로드 및 분석
-shp_path = "C:/Users/joe전략마케팅팀/Desktop/새 폴더/3주차_교육과정/seoul_sgg.shp"  # 파일 경로
-output_shp_path = "C:/Users/joe전략마케팅팀/Desktop/moran_result.shp"  # 저장 경로
+shp_path = "seoul_sgg.shp"  # 파일 경로
+output_shp_path = "moran_result.shp"  # 저장 경로
 
 # GeoDataFrame 로드
 gdf = gpd.read_file(shp_path)
