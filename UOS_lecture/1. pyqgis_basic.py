@@ -43,7 +43,7 @@ else:
     QgsProject.instance().addMapLayer(buffer_layer)
 
 # 폴리곤 레이어 불러오기
-polygon_layer = QgsProject.instance().mapLayersByName("seoul_sgg")
+polygon_layer = QgsProject.instance().mapLayersByName("seoul_sgg")[0]
 
 # 중심점 레이어 생성
 centroid_layer = QgsVectorLayer("Point?crs=EPSG:5179", "seoul_sgg_centroids", "memory")
