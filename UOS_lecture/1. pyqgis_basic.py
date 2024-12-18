@@ -1,5 +1,5 @@
 # 첫 번째 벡터 레이어 불러오기
-layer_path_1 = "/_jupyter_notebook/orgin_computer/seoul_sgg.shp"  # 첫 번째 벡터 파일 경로
+layer_path_1 = "/seoul_sgg.shp"  # 첫 번째 벡터 파일 경로
 layer_1 = QgsVectorLayer(layer_path_1, "seoul_sgg", "ogr")
 
 if not layer_1.isValid():
@@ -9,7 +9,7 @@ else:
 
 
 # 두 번째 벡터 레이어 불러오기
-layer_path_2 = "/_jupyter_notebook/orgin_computer/seoul_toilet.shp"  # 두 번째 벡터 파일 경로
+layer_path_2 = "/seoul_toilet.shp"  # 두 번째 벡터 파일 경로
 layer_2 = QgsVectorLayer(layer_path_2, "seoul_toilet", "ogr")
 
 if not layer_2.isValid():
@@ -21,7 +21,7 @@ else:
 buffer_distance = 100  # 100미터
 
 # 버퍼 레이어 출력 경로 설정
-buffer_output_path = "/_jupyter_notebook/orgin_computer/seoul_toilet_buffered.shp"  # 버퍼 출력 파일 경로
+buffer_output_path = "/seoul_toilet_buffered.shp"  # 버퍼 출력 파일 경로
 
 # 버퍼 생성
 processing.run("native:buffer", {
